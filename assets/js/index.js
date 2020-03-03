@@ -25,6 +25,7 @@ const divideResultSelect = document.querySelector("#divide-result");
 const divideSolveSelect = document.querySelector("#divide-solve");
 
 
+//Add function
 
 function clickAddSolve() {
     let addA = addASelect.value
@@ -36,6 +37,9 @@ function clickAddSolve() {
     addResultSelect.value = addResult;
 }
 
+//Subtract function
+
+
 function clickSubtractSolve() {
     let subtractA = subtractASelect.value
     subtractA = parseInt(subtractA, 10);
@@ -46,6 +50,8 @@ function clickSubtractSolve() {
     subtractResultSelect.value = subtractResult;
 }
 
+//Multiply function
+
 function clickMultiplySolve() {
     let multiplyA = multiplyASelect.value
     multiplyA = parseInt(multiplyA, 10);
@@ -55,6 +61,9 @@ function clickMultiplySolve() {
     let multiplyResult = multiplyA * multiplyB;
     multiplyResultSelect.value = multiplyResult;
 }
+
+//Divide functio
+
 
 
 function clickDivideSolve() {
@@ -68,7 +77,7 @@ function clickDivideSolve() {
 }
 
 
-
+//Call the function when "=" is clicked
 
 addSolveSelect.addEventListener("click", clickAddSolve);
 
@@ -77,6 +86,3 @@ subtractSolveSelect.addEventListener("click", clickSubtractSolve);
 multiplySolveSelect.addEventListener("click", clickMultiplySolve);
 
 divideSolveSelect.addEventListener("click", clickDivideSolve);
-
-
-
